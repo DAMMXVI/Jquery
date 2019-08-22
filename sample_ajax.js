@@ -18,7 +18,7 @@ $("#btn").click(function () {
 						"<td>" + value.fullName + "</td>" +
 						"<td>" + value.phoneNumber + "</td>" +
 						"<td>" + value.address + "</td>" +
-						"<td> <a class='btn btn-warning' href='@Url.Action("EditContact", "Contact", new { id = String.Empty})/"+value.id+"'>Edit</a>&nbsp" +
+						"<td> <a class='btn btn-warning' href='@Url.Action("EditContact", "Contact", new { id = String.Empty})/"+value.id+"'>Edit</a>&nbsp" +	//this and following are for Asp.net MVC
 						"<a class='btn btn-primary' href='@Url.Action("DetailContact", "Contact", new { id = String.Empty})/"+value.id+"'>Details</a>&nbsp"+
 						"<a class='btn btn-danger' href='@Url.Action("DelContact", "Contact", new { id = String.Empty})/"+value.id+"'>Delete</a>&nbsp</td>"+
 						"</tr>";
